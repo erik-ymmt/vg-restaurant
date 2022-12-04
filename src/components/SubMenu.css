@@ -1,0 +1,56 @@
+.subMenu__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+}
+.subMenu__title {
+  margin-bottom: 1rem;
+}
+
+
+.subMenu__item_card_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.subMenu__item_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.subMenu__item_card__title {
+  color: var(--color-golden);
+}
+
+.subMenu__item_card__description {
+  color: var(--color-grey);
+}
+
+.subMenu__item_card__price {
+  color: var(--color-white);
+}
+
+.subMenu__item_card button {
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: .9rem;
+  height: 1rem;
+  width: 6rem;
+  border-radius: 4px;
+  border: 0;
+  opacity: 0.9;
+  background-color: var(--color-golden);
+  color: var(--color-black);
+  cursor: pointer;
+  margin-right: 4px;
+  opacity: 0.85;
+}
+
+.subMenu__item_card button:hover {
+  opacity: 1;
+}
+

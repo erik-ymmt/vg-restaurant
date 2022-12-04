@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--color-black);
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  padding: 1rem 2rem;
+  opacity: 0.9;
+}
+
+
+.header__cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.header__items_counter {
+  font-size: 1.5rem;
+}
