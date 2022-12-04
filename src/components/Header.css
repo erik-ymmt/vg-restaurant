@@ -10,6 +10,7 @@ header {
   font-family: var(--font-base);
   padding: 1rem 2rem;
   opacity: 0.9;
+  z-index: 5;
 }
 
 

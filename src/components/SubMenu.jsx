@@ -3,6 +3,7 @@ import React from 'react';
 import { useContext } from 'react';
 import cartContext from '../context/cartContext';
 
+import { RiLeafFill } from 'react-icons/ri';
 import './SubMenu.css';
 
 function SubMenu({ title, icon, items }) {
@@ -13,18 +14,18 @@ function SubMenu({ title, icon, items }) {
     const curItem = cartItems.find((item) => itemName === item.name);
     if (curItem) {
       curItem.qtt += 1;
-      setCartItems([...cartItems])
+      setCartItems([...cartItems]);
     } else {
       setCartItems([
         ...cartItems,
         {
           name: item.name,
           price: item.price,
-          qtt: 1
-        }
-      ])
+          qtt: 1,
+        },
+      ]);
     }
-  }
+  };
 
   return (
     <section className="subMenu__container">
@@ -34,6 +35,9 @@ function SubMenu({ title, icon, items }) {
         {items.map((item) => (
           <div key={item.name} className="subMenu__item_card">
             <div>
+              <h3>
+                <RiLeafFill size="18px" color="#DCCA87" />
+              </h3>
               <h3 className="subMenu__item_card__title">{item.name}</h3>
               <h4 className="subMenu__item_card__description">
                 {item.description}

@@ -81,3 +81,9 @@
 .cart__item_container button:hover {
   background-color: var(--color-light-red);
 }
+
+@media screen and (max-width: 640px) {
+  .cart__container__true {
+    width: 100vw;
+  }
+}

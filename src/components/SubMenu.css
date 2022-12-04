@@ -8,11 +8,10 @@
   margin-bottom: 1rem;
 }
 
-
 .subMenu__item_card_container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .subMenu__item_card {
@@ -54,3 +53,8 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 640px) {
+  .subMenu__container {
+    width: 80vw;
+  }
+}

@@ -5,7 +5,7 @@
   background-color: var(--color-gray);
   font-family: var(--font-base);
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   color: aliceblue;
   padding: 6rem 2rem;
   gap: 1rem;
@@ -14,4 +14,10 @@
 .menu__submenus {
   display: flex;
   gap: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  .menu__submenus {
+    flex-direction: column;
+  }
 }

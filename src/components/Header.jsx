@@ -2,7 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import cartContext from '../context/cartContext';
 
-import { RiShoppingCartFill } from 'react-icons/ri';
+import { RiShoppingCartFill, RiLeafFill } from 'react-icons/ri';
 import './Header.css';
 import Cart from './Cart';
 
@@ -13,7 +13,7 @@ function Header() {
   return (
     <>
       <header>
-        <h2>RESTAURANT VG</h2>
+        <h2>VG<RiLeafFill size="18px" color="#DCCA87" />RESTAURANT</h2>
         <div className="header__cart">
           {
             <RiShoppingCartFill
